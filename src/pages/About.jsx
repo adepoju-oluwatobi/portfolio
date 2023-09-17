@@ -4,6 +4,7 @@ import Linkedin from "../assets/linkedin.svg";
 import Github from "../assets/github.svg";
 import Email from "../assets/mail.svg";
 import profilePics from "../assets/profile-pics.png";
+import { Link } from "react-router-dom";
 
 function About() {
   const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
@@ -97,13 +98,15 @@ function About() {
             </div>
 
             <div className="text-center flex flex-col items-center gap-[30px] mt-8 text-white">
+              <Link to='/'>
               <p
                 className={`bg-black rounded px-4 py-2 hover:bg-[#5F439B] transition hover:translate-x-5 w-fit duration-300 ${
                   isNavMenuOpen ? "opacity-100" : "opacity-0"
                 }`}
               >
-                About
+                Home
               </p>
+              </Link>
 
               <p
                 className={`bg-black rounded hover:bg-[#5F439B] hover:translate-x-5 transition w-fit px-4 py-2 duration-300 ${
