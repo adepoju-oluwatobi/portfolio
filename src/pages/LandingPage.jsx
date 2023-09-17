@@ -82,7 +82,7 @@ function LandingPage() {
                 </div>
             </div>
 
-            <div className="text-center flex flex-col gap-[10px] mt-4 text-white">
+            <div className="text-center flex flex-col gap-[10px] mt-8 text-white">
           <p className={`bg-black rounded p-4 hover:bg-[#5F439B] transition duration-300 ${isNavMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
             About
           </p>
