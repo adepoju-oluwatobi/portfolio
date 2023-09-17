@@ -12,7 +12,7 @@ function LandingPage() {
   };
 
   return (
-    <div className="h-[100vh] w-[100%] bg-[url(./assets/BACKGROUND.png)]">
+    <div className="h-screen bg-[url(./assets/BACKGROUND.png)]">
       {/** Menu */}
       <div className="pt-4 pl-4">
         <div
@@ -29,8 +29,8 @@ function LandingPage() {
 
       <div className="flex items-center gap-4">
         {/** Menu side bar */}
-        <div className="pt-4">
-          <div className='side-bar w-2 h-[80vh] bg-[#5F439B] rounded'></div>
+        <div className='pt-4 transform transition-transform duration-800 ease-in-out'>
+          <div className="w-2 h-[80vh] bg-[#5F439B] rounded"></div>
         </div>
         {/** End */}
 
@@ -69,8 +69,8 @@ function LandingPage() {
         </div>
       </div>
 
-      <div className={`nav-menu relative top-[-80%] ${isNavMenuOpen ? 'block' : 'hidden'}`}>
-        <div className="w-[90%] h-[80vh] bg-white border-r-[8px] border-[#5F439B]"></div>
+      <div className={`nav-menu transform transition-transform duration-500 ease-in-out relative top-[-80%] ${isNavMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className="w-[90%] h-[80vh] bg-white border-r-4 border-[#5F439B]"></div>
       </div>
     </div>
   );
