@@ -82,20 +82,20 @@ function LandingPage() {
                 </div>
             </div>
 
-            <div className="text-center flex flex-col gap-[10px] mt-8 text-white">
-          <p className={`bg-black rounded p-4 hover:bg-[#5F439B] transition duration-300 ${isNavMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
+            <div className="text-center flex flex-col items-center gap-[30px] mt-8 text-white">
+          <p className={`bg-black rounded px-4 py-2 hover:bg-[#5F439B] transition hover:translate-x-5 w-fit duration-300 ${isNavMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
             About
           </p>
 
-          <p className={`bg-black rounded p-4 hover:bg-[#5F439B] transition duration-300 ${isNavMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
+          <p className={`bg-black rounded hover:bg-[#5F439B] hover:translate-x-5 transition w-fit px-4 py-2 duration-300 ${isNavMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
             Projects
           </p>
 
-          <p className={`bg-black rounded p-4 hover:bg-[#5F439B] transition duration-300 ${isNavMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
+          <p className={`bg-black rounded p-4 hover:bg-[#5F439B] transition w-fit px-4 py-2 duration-300 hover:translate-x-5 ${isNavMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
             Contact
           </p>
 
-          <p className={`bg-black rounded p-4 hover:bg-[#5F439B] transition duration-300 ${isNavMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
+          <p className={`bg-black rounded p-4 hover:bg-[#5F439B] transition w-fit px-4 py-2 duration-300 hover:translate-x-5 ${isNavMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
             Resume
           </p>
         </div>
