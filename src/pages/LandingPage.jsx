@@ -29,7 +29,7 @@ function LandingPage() {
 
          <div>
                {/**Bio */}
-        <div className='text-white mt-[100%]'>
+        <div className='text-white mt-[50%]'>
             <div className='p-2'>
                 <p>Hello, i am Adepoju Oluwatobi</p>
                 <p className='font-bold text-[34px]'>WEB DEVELOPER</p>
