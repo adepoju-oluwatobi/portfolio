@@ -3,6 +3,7 @@ import Open from "../assets/chevrons-right.svg";
 import Linkedin from "../assets/linkedin.svg";
 import Github from "../assets/github.svg";
 import Email from "../assets/mail.svg";
+import profilePics from '../assets/profile-pics.png'
 
 function LandingPage() {
   const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
@@ -70,7 +71,36 @@ function LandingPage() {
       </div>
 
       <div className={`nav-menu transform transition-transform duration-500 ease-in-out relative top-[-80%] ${isNavMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-        <div className="w-[90%] h-[80vh] bg-white border-r-4 border-[#5F439B]"></div>
+        <div className="w-[90%] h-[80vh] bg-white border-r-4 border-[#5F439B]">
+           <div className="p-4">
+           <div className="flex gap-4">
+                <img src={profilePics} alt="" />
+                <div>
+                    <p>Adepoju Oluwatobi</p>
+                    <p>WEB DEVELOPER</p>
+                    <p>FULL STACK</p>
+                </div>
+            </div>
+
+            <div className="text-center flex flex-col gap-[30px] mt-10 text-white">
+          <p className={`bg-black rounded p-4 hover:bg-[#5F439B] transition duration-300 ${isNavMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
+            About
+          </p>
+
+          <p className={`bg-black rounded p-4 hover:bg-[#5F439B] transition duration-300 ${isNavMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
+            Projects
+          </p>
+
+          <p className={`bg-black rounded p-4 hover:bg-[#5F439B] transition duration-300 ${isNavMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
+            Contact
+          </p>
+
+          <p className={`bg-black rounded p-4 hover:bg-[#5F439B] transition duration-300 ${isNavMenuOpen ? 'opacity-100' : 'opacity-0'}`}>
+            Resume
+          </p>
+        </div>
+           </div>
+        </div>
       </div>
     </div>
   );
